@@ -174,22 +174,7 @@ export async function getMPs(): Promise<MP[]> {
   }));
 }
 
-export async function getMPById(id: string): Promise<MP | null> {
-  const response = await fetch(`${API_BASE}/mps/${id}`);
-  if (!response.ok) return null;
-  const mp = await response.json();
 
-  return {
-    id: mp.id.toString(),
-    name: mp.name,
-    riding: mp.riding,
-    party: mp.party as PartyName,
-    imageUrl: mp.photo_url || '/placeholder.svg',
-    attendanceRate: mp.attendance_rate || 0,
-    partyLineVoting: mp.party_line_voting_rate || 0,
-    yearsInOffice: mp.years_in_office || 0
-  };
-}
 
 export async function searchMPs(query: string): Promise<MP[]> {
   const params = new URLSearchParams({ search: query });
