@@ -23,11 +23,11 @@ export async function getMotions(): Promise<Motion[]> {
     classification: m.classification,
     voteBreakdown: m.vote_results_by_party
       ? Object.entries(m.vote_results_by_party).map(([party, votes]: [string, any]) => ({
-          party,
-          yea: votes.yea || 0,
-          nay: votes.nay || 0,
-          abstain: votes.abstain || 0
-        }))
+        party,
+        yea: votes.yea || 0,
+        nay: votes.nay || 0,
+        abstain: votes.abstain || 0
+      }))
       : [],
     date: m.date || new Date().toISOString().split('T')[0],
     upvotes: 0,
@@ -54,11 +54,11 @@ export async function getMotionById(id: string): Promise<Motion | null> {
     classification: m.classification,
     voteBreakdown: m.vote_results_by_party
       ? Object.entries(m.vote_results_by_party).map(([party, votes]: [string, any]) => ({
-          party: party as PartyName,
-          yea: votes.yea || 0,
-          nay: votes.nay || 0,
-          abstain: votes.abstain || 0
-        }))
+        party: party as PartyName,
+        yea: votes.yea || 0,
+        nay: votes.nay || 0,
+        abstain: votes.abstain || 0
+      }))
       : [],
     date: m.date || new Date().toISOString().split('T')[0],
     upvotes: 0,
@@ -70,7 +70,7 @@ export async function voteOnMotion(motionId: string, vote: 'up' | 'down'): Promi
   const response = await fetch(`${API_BASE}/motions/${motionId}/vote`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ 
+    body: JSON.stringify({
       mp_id: 1, // placeholder
       vote: vote === 'up' ? 'upvote' : 'downvote'
     })
