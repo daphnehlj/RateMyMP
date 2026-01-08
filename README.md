@@ -1,6 +1,6 @@
-MP Report Card 🇨🇦
+RateMyMP 🇨🇦
 
-MP Report Card is a full-stack web application that helps Canadians track parliamentary activity, evaluate MP performance, and stay informed about federal politics. The platform aggregates data on MPs, parliamentary motions, and voting behaviour, with plans to expand into spending, transparency, and activity tracking.
+RateMyMP is a full-stack web application that helps Canadians track parliamentary activity, evaluate MP performance, and stay informed about federal politics. The platform aggregates data on MPs, parliamentary motions, and voting behaviour, with plans to expand into spending, transparency, and activity tracking.
 
     🚀 Features ✅ Implemented
 
@@ -18,17 +18,19 @@ MP Report Card is a full-stack web application that helps Canadians track parlia
 
     Display Data on MP Report Cards:
 
-    Voting record
+        Voting record
 
-    Parliamentary activity 
+        Parliamentary activity 
 
-    Spending breakdown
+        Spending breakdown
 
-    Transparency disclosures
+        Transparency disclosures
 
-    Contact information
+        Contact information
 
     Live data ingestion 
+
+    User ratings of parliamentary activity
 
 📊 Data Sources
 
