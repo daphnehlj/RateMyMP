@@ -2,7 +2,7 @@ RateMyMP 🇨🇦
 
 RateMyMP is a full-stack web application that helps Canadians track parliamentary activity, evaluate MP performance, and stay informed about federal politics. The platform aggregates data on MPs, parliamentary motions, and voting behaviour, with plans to expand into spending, transparency, and activity tracking.
 
-    🚀 Features ✅ Implemented
+ 🚀 Features ✅ Implemented
 
     🔍 Search MPs by name or postal code
 
